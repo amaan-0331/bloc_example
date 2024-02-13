@@ -1,4 +1,5 @@
 import 'package:bloc_example/src/splash_view.dart';
+import 'package:bloc_example/theme.dart';
 import 'package:flutter/material.dart';
 
 class MainApp extends StatelessWidget {
@@ -6,8 +7,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashView(),
+    return MaterialApp(
+      darkTheme: AppTheme.darkTheme(),
+      theme: AppTheme.lightTheme(),
+      themeMode: ThemeMode.dark,
+      home: const SplashView(),
     );
   }
 }
