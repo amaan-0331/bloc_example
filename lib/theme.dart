@@ -17,10 +17,10 @@ class AppTheme {
 
   static ThemeData lightTheme() {
     return ThemeData(
-      colorScheme: const ColorScheme.dark(
+      colorScheme: const ColorScheme.light(
         primary: AppColors.goldyYellow,
         secondary: AppColors.royalePurple,
-        tertiary: Color(0xffC135CA),
+        tertiary: AppColors.steelPink,
         background: AppColors.lacePink,
         onBackground: AppColors.smokyBlack,
         onSurface: AppColors.smokyBlack,
