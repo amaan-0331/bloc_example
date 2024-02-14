@@ -1,4 +1,4 @@
-import 'package:bloc_example/src/splash_view.dart';
+import 'package:bloc_example/src/views/home_view.dart';
 import 'package:bloc_example/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme(),
       theme: AppTheme.lightTheme(),
       themeMode: ThemeMode.dark,
-      home: const SplashView(),
+      home: const HomeView(),
     );
   }
 }
