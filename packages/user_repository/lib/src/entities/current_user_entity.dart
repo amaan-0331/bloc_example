@@ -1,17 +1,16 @@
 import 'package:equatable/equatable.dart';
 
 class CurrentUserEntity extends Equatable {
-  final String id;
-  final String email;
-  final String name;
-  final String? picture;
-
   const CurrentUserEntity({
     required this.id,
     required this.email,
     required this.name,
     this.picture,
   });
+  final String id;
+  final String email;
+  final String name;
+  final String? picture;
 
   Map<String, Object?> toMap() {
     return {
@@ -36,11 +35,13 @@ class CurrentUserEntity extends Equatable {
 
   @override
   String toString() {
-    return '''UserEntity: {
+    return '''
+UserEntity: {
       'id': $id,
       'email': $email,
       'name': $name,
       'picture': $picture,
-}''';
+}
+''';
   }
 }

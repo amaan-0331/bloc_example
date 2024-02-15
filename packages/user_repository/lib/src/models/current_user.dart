@@ -2,17 +2,17 @@ import 'package:equatable/equatable.dart';
 import 'package:user_repository/user_repository.dart';
 
 class CurrentUser extends Equatable {
-  final String id;
-  final String email;
-  final String name;
-  final String? picture;
-
   const CurrentUser({
     required this.id,
     required this.email,
     required this.name,
     this.picture,
   });
+
+  final String id;
+  final String email;
+  final String name;
+  final String? picture;
 
   static const empty = CurrentUser(
     id: '',

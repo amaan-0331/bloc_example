@@ -1,5 +1,5 @@
-import 'package:bloc_example/src/views/home_view.dart';
 import 'package:bloc_example/src/theme.dart';
+import 'package:bloc_example/src/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 class MainApp extends StatelessWidget {
