@@ -1,5 +1,5 @@
 import 'package:bloc_example/src/views/home_view.dart';
-import 'package:bloc_example/theme.dart';
+import 'package:bloc_example/src/theme.dart';
 import 'package:flutter/material.dart';
 
 class MainApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       darkTheme: AppTheme.darkTheme(),
       theme: AppTheme.lightTheme(),
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       home: const HomeView(),
     );
   }

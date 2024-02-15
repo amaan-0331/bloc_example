@@ -1,4 +1,4 @@
-import 'package:bloc_example/app.dart';
+import 'package:bloc_example/src/app.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
