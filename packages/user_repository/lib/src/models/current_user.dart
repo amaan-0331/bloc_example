@@ -51,7 +51,7 @@ class CurrentUser extends Equatable {
     );
   }
 
-  CurrentUser fromEntity(CurrentUserEntity entity) {
+  static CurrentUser fromEntity(CurrentUserEntity entity) {
     return CurrentUser(
       id: entity.id,
       email: entity.email,
