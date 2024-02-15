@@ -1,12 +1,13 @@
 name: bloc_example
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: ">=3.2.6 <4.0.0"
 
 dependencies:
+  firebase_core: ^2.25.4
   flutter:
     sdk: flutter
 
