@@ -13,6 +13,14 @@ class FirebaseUserRepository implements UserRepository {
   final userCollection = FirebaseFirestore.instance.collection('users');
 
   @override
+  Stream<User?> get user {
+    return _firebaseAuth.authStateChanges().map((firebaseUser) {
+      final user = firebaseUser;
+      return user;
+    });
+  }
+
+  @override
   Future<CurrentUser> signUp(CurrentUser user, String password) async {
     try {
       final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
