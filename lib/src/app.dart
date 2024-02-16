@@ -1,5 +1,6 @@
 import 'package:bloc_example/src/blocs/authentication_bloc/authentication_bloc.dart';
 import 'package:bloc_example/src/theme.dart';
+import 'package:bloc_example/src/views/authentication/welcome_view.dart';
 import 'package:bloc_example/src/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,7 +27,7 @@ class MainApp extends StatelessWidget {
             if (state.status == AuthenticationStatus.authenticated) {
               return const HomeView();
             } else {
-              return const HomeView();
+              return const WelcomeView();
             }
           },
         ),
